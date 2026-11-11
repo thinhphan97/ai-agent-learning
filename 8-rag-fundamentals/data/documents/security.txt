@@ -1,0 +1,2 @@
+Account Security
+Two-factor authentication is mandatory for administrator accounts. Password reset links expire after 15 minutes. Never share your one-time login code with another person.

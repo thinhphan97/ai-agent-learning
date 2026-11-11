@@ -1,0 +1,33 @@
+{
+  "cases": [
+    {
+      "id": "refund_multi_aspect",
+      "question": "What are the refund deadline, eligibility conditions, and exceptions for store purchases?",
+      "tenant_id": "tenant_a",
+      "required_aspects": ["deadline", "conditions", "exceptions"],
+      "gold_aspect_parents": {
+        "deadline": ["refund_deadline_1", "refund_deadline_2"],
+        "conditions": ["refund_eligibility"],
+        "exceptions": ["refund_exceptions"]
+      }
+    },
+    {
+      "id": "vllm_oom",
+      "question": "How can I mitigate CUDA out of memory in vLLM Qwen3 inference?",
+      "tenant_id": "tenant_a",
+      "required_aspects": ["mitigation"],
+      "gold_aspect_parents": {
+        "mitigation": ["vllm_memory"]
+      }
+    },
+    {
+      "id": "auth_403",
+      "question": "Why does ERR_AUTH_403 occur in the administrator dashboard?",
+      "tenant_id": "tenant_a",
+      "required_aspects": ["diagnosis"],
+      "gold_aspect_parents": {
+        "diagnosis": ["auth_error"]
+      }
+    }
+  ]
+}

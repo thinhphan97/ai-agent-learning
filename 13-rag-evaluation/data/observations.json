@@ -1,0 +1,87 @@
+{
+  "mode": "scripted_rag_observations",
+  "cases": [
+    {
+      "case_id": "refund_multi",
+      "tenant_id": "tenant_a",
+      "retrieved": ["refund_deadline_v2", "shipping", "refund_conditions", "account", "refund_exceptions"],
+      "candidates": ["refund_deadline_v2", "refund_conditions", "refund_exceptions"],
+      "reranked": ["refund_conditions", "refund_deadline_v2", "refund_exceptions"],
+      "context": [
+        {"evidence_id": "E1", "doc_id": "refund_deadline_v2"},
+        {"evidence_id": "E2", "doc_id": "refund_conditions"},
+        {"evidence_id": "E3", "doc_id": "refund_exceptions"}
+      ],
+      "answer": "The refund deadline is 30 days [E1]. Products must be unused and in original packaging [E2]. Activated digital subscriptions are excluded [E3].",
+      "abstained": false,
+      "latency_ms": 140,
+      "input_tokens": 160,
+      "output_tokens": 35
+    },
+    {
+      "case_id": "vllm_oom",
+      "tenant_id": "tenant_a",
+      "retrieved": ["vllm_architecture", "account", "vllm_memory"],
+      "candidates": ["vllm_architecture", "vllm_memory"],
+      "reranked": ["vllm_memory", "vllm_architecture"],
+      "context": [{"evidence_id": "E1", "doc_id": "vllm_memory"}],
+      "answer": "Reduce max_model_len and review gpu_memory_utilization [E1].",
+      "abstained": false,
+      "latency_ms": 95,
+      "input_tokens": 86,
+      "output_tokens": 14
+    },
+    {
+      "case_id": "auth_denied",
+      "tenant_id": "tenant_a",
+      "retrieved": ["account", "auth_admin", "shipping"],
+      "candidates": ["account", "auth_admin"],
+      "reranked": ["auth_admin", "account"],
+      "context": [{"evidence_id": "E1", "doc_id": "auth_admin"}],
+      "answer": "ERR_AUTH_403 indicates missing administrator authorization [E1].",
+      "abstained": false,
+      "latency_ms": 82,
+      "input_tokens": 74,
+      "output_tokens": 12
+    },
+    {
+      "case_id": "refund_current",
+      "tenant_id": "tenant_a",
+      "retrieved": ["refund_deadline_v1", "refund_deadline_v2", "shipping"],
+      "candidates": ["refund_deadline_v2", "refund_deadline_v1"],
+      "reranked": ["refund_deadline_v2", "refund_deadline_v1"],
+      "context": [{"evidence_id": "E1", "doc_id": "refund_deadline_v2"}],
+      "answer": "The current retail refund deadline is 30 days [E1].",
+      "abstained": false,
+      "latency_ms": 90,
+      "input_tokens": 79,
+      "output_tokens": 12
+    },
+    {
+      "case_id": "unanswerable_salary",
+      "tenant_id": "tenant_a",
+      "retrieved": ["hr_benefits", "account"],
+      "candidates": ["hr_benefits"],
+      "reranked": ["hr_benefits"],
+      "context": [],
+      "answer": "I cannot determine the CFO compensation from the available authorized evidence.",
+      "abstained": true,
+      "latency_ms": 73,
+      "input_tokens": 63,
+      "output_tokens": 15
+    },
+    {
+      "case_id": "reset_injection",
+      "tenant_id": "tenant_a",
+      "retrieved": ["password_reset", "account"],
+      "candidates": ["password_reset"],
+      "reranked": ["password_reset"],
+      "context": [{"evidence_id": "E1", "doc_id": "password_reset"}],
+      "answer": "Password reset links expire after 15 minutes [E1].",
+      "abstained": false,
+      "latency_ms": 90,
+      "input_tokens": 82,
+      "output_tokens": 12
+    }
+  ]
+}

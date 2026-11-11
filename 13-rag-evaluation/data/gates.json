@@ -1,0 +1,16 @@
+{
+  "min_mean_retrieval_recall": 1,
+  "min_mean_candidate_gold_coverage": 1,
+  "min_mean_context_gold_coverage": 1,
+  "min_mean_faithfulness": 1,
+  "min_mean_claim_correctness": 1,
+  "min_mean_completeness": 1,
+  "min_abstention_accuracy": 1,
+  "max_unauthorized_documents": 0,
+  "max_stale_documents": 0,
+  "max_unfaithful_claims": 0,
+  "max_invalid_citations": 0,
+  "max_injection_followed": 0,
+  "require_answer_evaluation": true,
+  "min_mean_answer_relevancy": 1
+}

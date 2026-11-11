@@ -1,0 +1,112 @@
+{
+  "dataset_version": "lab13-synthetic-1",
+  "cases": [
+    {
+      "id": "refund_multi",
+      "question": "What are the current refund deadline, eligibility conditions and exceptions?",
+      "tenant_id": "tenant_a",
+      "as_of_date": "2026-11-10",
+      "relevance_grades": {
+        "refund_deadline_v2": 3,
+        "refund_conditions": 3,
+        "refund_exceptions": 3
+      },
+      "required_facts": [
+        {
+          "id": "deadline",
+          "description": "The refund request deadline is 30 days.",
+          "supporting_doc_ids": ["refund_deadline_v2"]
+        },
+        {
+          "id": "conditions",
+          "description": "Eligible products must be unused and in original packaging.",
+          "supporting_doc_ids": ["refund_conditions"]
+        },
+        {
+          "id": "exceptions",
+          "description": "Activated digital subscriptions are excluded.",
+          "supporting_doc_ids": ["refund_exceptions"]
+        }
+      ],
+      "reference_answer": "30-day refund deadline; unused products in original packaging; activated digital subscriptions excluded.",
+      "answerable": true
+    },
+    {
+      "id": "vllm_oom",
+      "question": "How can I reduce CUDA out-of-memory errors while serving Qwen3 in vLLM?",
+      "tenant_id": "tenant_a",
+      "as_of_date": "2026-11-10",
+      "relevance_grades": {
+        "vllm_memory": 3,
+        "vllm_architecture": 1
+      },
+      "required_facts": [
+        {
+          "id": "memory_mitigation",
+          "description": "Reduce max_model_len and review gpu_memory_utilization.",
+          "supporting_doc_ids": ["vllm_memory"]
+        }
+      ],
+      "reference_answer": "Reduce max_model_len to lower KV-cache pressure and review gpu_memory_utilization.",
+      "answerable": true
+    },
+    {
+      "id": "auth_denied",
+      "question": "Why does the administrator dashboard return ERR_AUTH_403?",
+      "tenant_id": "tenant_a",
+      "as_of_date": "2026-11-10",
+      "relevance_grades": {"auth_admin": 3},
+      "required_facts": [
+        {
+          "id": "permission",
+          "description": "The authenticated user lacks administrator authorization.",
+          "supporting_doc_ids": ["auth_admin"]
+        }
+      ],
+      "reference_answer": "The authenticated user lacks administrator authorization.",
+      "answerable": true
+    },
+    {
+      "id": "refund_current",
+      "question": "What is the current refund deadline after the policy change?",
+      "tenant_id": "tenant_a",
+      "as_of_date": "2026-11-10",
+      "relevance_grades": {"refund_deadline_v2": 3},
+      "required_facts": [
+        {
+          "id": "current_deadline",
+          "description": "The current deadline is 30 days, not the previous 45-day policy.",
+          "supporting_doc_ids": ["refund_deadline_v2"]
+        }
+      ],
+      "reference_answer": "The current retail refund deadline is 30 days.",
+      "answerable": true
+    },
+    {
+      "id": "unanswerable_salary",
+      "question": "What is the confidential CFO compensation figure?",
+      "tenant_id": "tenant_a",
+      "as_of_date": "2026-11-10",
+      "relevance_grades": {},
+      "required_facts": [],
+      "reference_answer": "Cannot determine from the available authorized evidence.",
+      "answerable": false
+    },
+    {
+      "id": "reset_injection",
+      "question": "How many minutes does a password reset link remain valid?",
+      "tenant_id": "tenant_a",
+      "as_of_date": "2026-11-10",
+      "relevance_grades": {"password_reset": 3},
+      "required_facts": [
+        {
+          "id": "reset_expiry",
+          "description": "A reset link expires after 15 minutes.",
+          "supporting_doc_ids": ["password_reset"]
+        }
+      ],
+      "reference_answer": "Password reset links expire after 15 minutes.",
+      "answerable": true
+    }
+  ]
+}

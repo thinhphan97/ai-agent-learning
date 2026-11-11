@@ -1,0 +1,130 @@
+{
+  "parents": [
+    {
+      "id": "refund_deadline_1",
+      "source": "store_refund_policy_v2.md",
+      "section": "Request Deadline",
+      "title": "Retail Refund Policy",
+      "version": "v2",
+      "tenant_id": "tenant_a",
+      "aspect": "deadline",
+      "text": "For physical goods purchased from the retail store, requests must be submitted within 30 calendar days of delivery. The deadline is counted from the confirmed delivery date and applies to standard returns.",
+      "children": [
+        "requests must be submitted within 30 calendar days of delivery.",
+        "The deadline is counted from the confirmed delivery date and applies to standard returns."
+      ]
+    },
+    {
+      "id": "refund_deadline_2",
+      "source": "store_refund_policy_v2.md",
+      "section": "Request Deadline",
+      "title": "Retail Refund Policy",
+      "version": "v2",
+      "tenant_id": "tenant_a",
+      "aspect": "deadline",
+      "text": "The refund request window for eligible physical purchases is 30 calendar days after delivery. Late requests cannot use the standard return process, subject to applicable statutory rights.",
+      "children": [
+        "The refund request window for eligible physical purchases is 30 calendar days after delivery.",
+        "Late requests cannot use the standard return process, subject to applicable statutory rights."
+      ]
+    },
+    {
+      "id": "refund_eligibility",
+      "source": "store_refund_policy_v2.md",
+      "section": "Eligibility Conditions",
+      "title": "Retail Refund Policy",
+      "version": "v2",
+      "tenant_id": "tenant_a",
+      "aspect": "conditions",
+      "text": "To qualify for a standard retail refund, physical products must remain unused and in their original packaging. Customers must also provide proof of purchase showing the order identifier.",
+      "children": [
+        "physical products must remain unused and in their original packaging.",
+        "Customers must also provide proof of purchase showing the order identifier."
+      ]
+    },
+    {
+      "id": "refund_exceptions",
+      "source": "store_refund_policy_v2.md",
+      "section": "Exceptions",
+      "title": "Retail Refund Policy",
+      "version": "v2",
+      "tenant_id": "tenant_a",
+      "aspect": "exceptions",
+      "text": "Activated digital subscriptions are excluded from the standard refund policy. Unactivated digital codes may qualify for review, and applicable statutory consumer rights still apply.",
+      "children": [
+        "Activated digital subscriptions are excluded from the standard refund policy.",
+        "Unactivated digital codes may qualify for review, and applicable statutory consumer rights still apply."
+      ]
+    },
+    {
+      "id": "refund_process",
+      "source": "store_refund_policy_v2.md",
+      "section": "Refund Process",
+      "title": "Retail Refund Policy",
+      "version": "v2",
+      "tenant_id": "tenant_a",
+      "aspect": "process",
+      "text": "Customers initiate the return process from the order portal. Staff inspect the returned product and issue the approved refund to the original payment method.",
+      "children": [
+        "Customers initiate the return process from the order portal.",
+        "Staff inspect the returned product and issue the approved refund to the original payment method."
+      ]
+    },
+    {
+      "id": "vllm_memory",
+      "source": "serving_runbook.md",
+      "section": "GPU Memory Troubleshooting",
+      "title": "vLLM Serving Runbook",
+      "version": "v1",
+      "tenant_id": "tenant_a",
+      "aspect": "mitigation",
+      "text": "When Qwen3 inference on vLLM encounters CUDA out of memory, reducing max_model_len can lower KV-cache pressure. Review gpu_memory_utilization and model-parallel placement before increasing batch concurrency.",
+      "children": [
+        "reducing max_model_len can lower KV-cache pressure.",
+        "Review gpu_memory_utilization and model-parallel placement before increasing batch concurrency."
+      ]
+    },
+    {
+      "id": "vllm_arch",
+      "source": "serving_runbook.md",
+      "section": "Model Architecture",
+      "title": "vLLM Serving Runbook",
+      "version": "v1",
+      "tenant_id": "tenant_a",
+      "aspect": "background",
+      "text": "Qwen3 is a language model family. vLLM supports tensor parallelism to distribute model execution over compatible GPUs.",
+      "children": [
+        "Qwen3 is a language model family.",
+        "vLLM supports tensor parallelism to distribute model execution over compatible GPUs."
+      ]
+    },
+    {
+      "id": "auth_error",
+      "source": "admin_security.md",
+      "section": "ERR_AUTH_403",
+      "title": "Administration Security Guide",
+      "version": "v3",
+      "tenant_id": "tenant_a",
+      "aspect": "diagnosis",
+      "text": "ERR_AUTH_403 is returned when a user lacks administrator authorization to open the dashboard. Verify the authenticated user's assigned role and the authorization policy.",
+      "children": [
+        "is returned when a user lacks administrator authorization to open the dashboard.",
+        "Verify the authenticated user's assigned role and the authorization policy."
+      ]
+    },
+    {
+      "id": "tenant_b_refund",
+      "source": "tenant_b_private_policy.md",
+      "section": "Refund Terms",
+      "title": "Other Tenant Refund Terms",
+      "version": "v7",
+      "tenant_id": "tenant_b",
+      "aspect": "deadline",
+      "text": "Tenant B customers may request a subscription refund within 45 calendar days. This confidential policy belongs only to tenant B.",
+      "children": [
+        "Tenant B customers may request a subscription refund within 45 calendar days.",
+        "This confidential policy belongs only to tenant B."
+      ]
+    }
+  ]
+}

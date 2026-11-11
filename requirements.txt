@@ -1,0 +1,17 @@
+# Shared dependencies for all AI Agent Learning labs.
+# Core agent and optional remote embedding/LLM clients.
+openai>=1.0,<3
+python-dotenv>=1,<2
+
+# Lab 11: vectorized exact search, real HNSW index, and local Qdrant mode.
+numpy>=1.26,<3
+hnswlib==0.8.0
+qdrant-client>=1.20,<2
+
+# Lab 12: true token counts for a selected OpenAI-compatible encoding.
+# This is NOT a tokenizer for arbitrary vLLM/Qwen models.
+tiktoken>=0.7,<1
+
+# Labs 9-10 and Lab 12: local Transformer embeddings / actual Cross-Encoder reranking.
+# Installing this also pulls in larger ML dependencies (PyTorch/Transformers).
+sentence-transformers>=6.0,<7

@@ -1,0 +1,18 @@
+# Lab 11 — local development service. No authentication, loopback only.
+# Never publish this instance directly to an untrusted network.
+name: ai-agent-learning-lab11
+
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.20.0
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:6333:6333" # REST API and dashboard
+      - "127.0.0.1:6334:6334" # gRPC API (optional client)
+    volumes:
+      - qdrant_storage:/qdrant/storage
+    environment:
+      QDRANT__LOG_LEVEL: INFO
+
+volumes:
+  qdrant_storage:

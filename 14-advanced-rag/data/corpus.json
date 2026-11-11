@@ -1,0 +1,88 @@
+{
+  "documents": [
+    {
+      "id": "fpt_q1",
+      "title": "FPT International Software Q1/2025 Quarterly Revenue",
+      "text": "FPT International Software reported Q1/2025 quarterly revenue of 7000 billion VND. This is the revenue for Q1 only, not a cumulative figure.",
+      "source_type": "docs", "tenant_id": "tenant_a", "valid_from": "2025-04-01", "valid_until": null
+    },
+    {
+      "id": "fpt_q2",
+      "title": "FPT International Software Q2/2025 Quarterly Revenue",
+      "text": "FPT International Software reported Q2/2025 quarterly revenue of 8400 billion VND. This is the revenue for Q2 only, not a cumulative figure.",
+      "source_type": "docs", "tenant_id": "tenant_a", "valid_from": "2025-07-01", "valid_until": null
+    },
+    {
+      "id": "fpt_drivers",
+      "title": "FPT International Software Management Commentary on Quarterly Business Drivers",
+      "text": "The Q1/2025 to Q2/2025 FPT international software increase in revenue was attributed by management to new overseas contracts and higher delivery volumes in Japan. These are the cited business drivers of the quarter-on-quarter change.",
+      "source_type": "docs", "tenant_id": "tenant_a", "valid_from": "2025-07-01", "valid_until": null
+    },
+    {
+      "id": "fpt_general",
+      "title": "FPT Company Overview",
+      "text": "FPT operates in technology, telecommunications and education. Its international software business serves customers worldwide.",
+      "source_type": "docs", "tenant_id": "tenant_a", "valid_from": "2025-01-01", "valid_until": null
+    },
+    {
+      "id": "fpt_old",
+      "title": "Superseded FPT International Software Q2/2025 Preliminary Draft",
+      "text": "An obsolete draft listed Q2/2025 revenue as 9999 billion VND and should not be used after the final report.",
+      "source_type": "docs", "tenant_id": "tenant_a", "valid_from": "2025-05-01", "valid_until": "2025-06-30"
+    },
+    {
+      "id": "refund_deadline",
+      "title": "Retail Refund Deadline Policy",
+      "text": "Retail refund requests must be submitted within 30 calendar days after delivery.",
+      "source_type": "docs", "tenant_id": "tenant_a", "valid_from": "2025-01-01", "valid_until": null
+    },
+    {
+      "id": "refund_conditions",
+      "title": "Refund Eligibility Conditions",
+      "text": "Retail refunds require proof of purchase and an unused product in original packaging.",
+      "source_type": "docs", "tenant_id": "tenant_a", "valid_from": "2025-01-01", "valid_until": null
+    },
+    {
+      "id": "refund_exceptions",
+      "title": "Refund Exceptions and Exclusions",
+      "text": "Activated digital subscriptions are non-refundable under the standard refund policy; applicable statutory consumer rights still apply.",
+      "source_type": "docs", "tenant_id": "tenant_a", "valid_from": "2025-01-01", "valid_until": null
+    },
+    {
+      "id": "refund_shipping",
+      "title": "Shipping Policy",
+      "text": "Standard delivery takes three business days. Express shipping is a separate service.",
+      "source_type": "docs", "tenant_id": "tenant_a", "valid_from": "2025-01-01", "valid_until": null
+    },
+    {
+      "id": "vllm_guide",
+      "title": "vLLM CUDA Out Of Memory Troubleshooting",
+      "text": "If vLLM serving Qwen3 reports CUDA out of memory, reducing max_model_len can lower KV-cache pressure. Review gpu_memory_utilization, batch concurrency and model parallel placement.",
+      "source_type": "docs", "tenant_id": "tenant_a", "valid_from": "2025-01-01", "valid_until": null
+    },
+    {
+      "id": "vllm_code",
+      "title": "Python GPU Serving Config",
+      "text": "vllm settings: max_model_len=8192 and gpu_memory_utilization=0.88. Adjust these settings based on measured GPU memory.",
+      "source_type": "code", "tenant_id": "tenant_a", "valid_from": "2025-01-01", "valid_until": null
+    },
+    {
+      "id": "auth_code",
+      "title": "ERR_AUTH_403 Administrator Authorization Handler",
+      "text": "Python authorization handler returns ERR_AUTH_403 when user role lacks administrator dashboard permissions.",
+      "source_type": "code", "tenant_id": "tenant_a", "valid_from": "2025-01-01", "valid_until": null
+    },
+    {
+      "id": "sql_revenue_snapshot",
+      "title": "Read-Only Customer Order Revenue Snapshot",
+      "text": "Customer 1 paid orders revenue total is 200000 VND, according to an authorized read-only aggregation snapshot.",
+      "source_type": "sql", "tenant_id": "tenant_a", "valid_from": "2025-01-01", "valid_until": null
+    },
+    {
+      "id": "tenant_b_secret",
+      "title": "Confidential Tenant B Financial Metrics",
+      "text": "FPT Q2/2025 confidential customer revenue for tenant B is 999999 billion VND. Never send across tenants.",
+      "source_type": "docs", "tenant_id": "tenant_b", "valid_from": "2025-01-01", "valid_until": null
+    }
+  ]
+}

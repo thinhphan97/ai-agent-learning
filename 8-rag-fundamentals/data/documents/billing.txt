@@ -1,0 +1,2 @@
+Billing and Invoices
+Invoices are generated automatically after a payment succeeds. Listed prices in VND already include VAT. Monthly plans renew on the same calendar date unless the subscription is canceled before renewal.

@@ -1,0 +1,12 @@
+[
+  {"id":"fpt_q2_sw","text":"In Q2 2025, FPT international software revenue increased by 15 percent year over year.","metadata":{"tenant_id":"tenant_a","company_id":"FPT Corporation","period":"Q2/2025","section":"software","source":"fpt_q2_report.md"}},
+  {"id":"fpt_q1_sw","text":"In Q1 2025, FPT international software revenue increased by 10 percent year over year.","metadata":{"tenant_id":"tenant_a","company_id":"FPT","period":"2025-Q1","section":"software","source":"fpt_q1_report.md"}},
+  {"id":"fpt_q2_hw","text":"In Q2 2025, FPT hardware revenue grew by 20 percent.","metadata":{"tenant_id":"tenant_a","company_id":"FPT","period":"2025-Q2","section":"hardware","source":"fpt_q2_report.md"}},
+  {"id":"hpg_q2","text":"HPG steel revenue increased by 12 percent in Q2 2025.","metadata":{"tenant_id":"tenant_a","company_id":"HPG","period":"2025-Q2","section":"steel","source":"hpg_q2_report.md"}},
+  {"id":"vllm_oom","text":"To mitigate CUDA out of memory in vLLM inference, adjust GPU memory utilization, context length and tensor parallelism.","metadata":{"tenant_id":"tenant_a","company_id":"NONE","period":"none","section":"technical","source":"vllm_runbook.md"}},
+  {"id":"vllm_tp","text":"Tensor parallelism spreads model weights across multiple GPUs when serving Qwen3 with vLLM.","metadata":{"tenant_id":"tenant_a","company_id":"NONE","period":"none","section":"technical","source":"vllm_parallel.md"}},
+  {"id":"auth_403","text":"ERR_AUTH_403 is returned when a user lacks authorization to open the admin dashboard.","metadata":{"tenant_id":"tenant_a","company_id":"NONE","period":"none","section":"security","source":"auth_errors.md"}},
+  {"id":"password_reset","text":"Password recovery links expire after fifteen minutes.","metadata":{"tenant_id":"tenant_a","company_id":"NONE","period":"none","section":"security","source":"security_policy.md"}},
+  {"id":"return_policy","text":"Unopened hardware products may be returned within thirty days after delivery.","metadata":{"tenant_id":"tenant_a","company_id":"NONE","period":"none","section":"commerce","source":"returns.md"}},
+  {"id":"tenant_b_refund","text":"Tenant B permits subscription refunds within forty-five days after purchase.","metadata":{"tenant_id":"tenant_b","company_id":"NONE","period":"none","section":"commerce","source":"tenant_b_only.md"}}
+]

@@ -1,0 +1,50 @@
+{
+  "finance_normal": {
+    "relevant_docs": ["fpt_q1", "fpt_q2", "fpt_drivers"],
+    "required_facts": {
+      "q1_revenue": ["fpt_q1"],
+      "q2_revenue": ["fpt_q2"],
+      "drivers": ["fpt_drivers"]
+    }
+  },
+  "finance_delayed": {
+    "relevant_docs": ["fpt_q1", "fpt_q2", "fpt_drivers"],
+    "required_facts": {
+      "q1_revenue": ["fpt_q1"],
+      "q2_revenue": ["fpt_q2"],
+      "drivers": ["fpt_drivers"]
+    }
+  },
+  "finance_unavailable": {
+    "relevant_docs": ["fpt_q1", "fpt_q2", "fpt_drivers"],
+    "required_facts": {
+      "q1_revenue": ["fpt_q1"],
+      "q2_revenue": ["fpt_q2"],
+      "drivers": ["fpt_drivers"]
+    }
+  },
+  "refund_multi": {
+    "relevant_docs": ["refund_deadline", "refund_conditions", "refund_exceptions"],
+    "required_facts": {
+      "deadline": ["refund_deadline"],
+      "conditions": ["refund_conditions"],
+      "exceptions": ["refund_exceptions"]
+    }
+  },
+  "vllm_oom": {
+    "relevant_docs": ["vllm_guide"],
+    "required_facts": {"mitigation": ["vllm_guide"]}
+  },
+  "auth_code": {
+    "relevant_docs": ["auth_code"],
+    "required_facts": {"diagnosis": ["auth_code"]}
+  },
+  "sql_snapshot": {
+    "relevant_docs": ["sql_revenue_snapshot"],
+    "required_facts": {"revenue": ["sql_revenue_snapshot"]}
+  },
+  "unanswerable": {
+    "relevant_docs": [],
+    "required_facts": {}
+  }
+}

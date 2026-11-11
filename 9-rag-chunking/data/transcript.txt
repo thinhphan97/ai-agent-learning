@@ -1,0 +1,7 @@
+Speaker A: We reviewed annual leave applications this morning.
+Speaker B: The human resources team requires managers to approve leave requests.
+Speaker A: Some employees requested additional days after probation.
+Speaker B: The next agenda item concerns account security.
+Speaker A: Administrators must enable two-factor authentication.
+Speaker B: Password reset links expire after fifteen minutes.
+Speaker A: The security team will review all suspicious login alerts.

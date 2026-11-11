@@ -1,0 +1,53 @@
+{
+  "dataset_version": "lab14-synthetic-v1",
+  "cases": [
+    {
+      "id": "finance_normal",
+      "question": "Compare FPT international software revenue in Q1 and Q2 2025, calculate growth and explain the main reasons for the change.",
+      "tenant_id": "tenant_a", "as_of_date": "2026-11-10",
+      "sources": ["docs"], "scenario": "normal"
+    },
+    {
+      "id": "finance_delayed",
+      "question": "Compare FPT international software revenue in Q1 and Q2 2025, calculate growth and explain the main reasons for the change.",
+      "tenant_id": "tenant_a", "as_of_date": "2026-11-10",
+      "sources": ["docs"], "scenario": "delayed-drivers"
+    },
+    {
+      "id": "refund_multi",
+      "question": "What are the refund deadline, conditions and exceptions?",
+      "tenant_id": "tenant_a", "as_of_date": "2026-11-10",
+      "sources": ["docs"], "scenario": "normal"
+    },
+    {
+      "id": "vllm_oom",
+      "question": "How can vLLM Qwen3 reduce CUDA out of memory errors?",
+      "tenant_id": "tenant_a", "as_of_date": "2026-11-10",
+      "sources": ["docs"], "scenario": "normal"
+    },
+    {
+      "id": "auth_code",
+      "question": "Why does ERR_AUTH_403 occur in the administrator dashboard code?",
+      "tenant_id": "tenant_a", "as_of_date": "2026-11-10",
+      "sources": ["code"], "scenario": "normal"
+    },
+    {
+      "id": "sql_snapshot",
+      "question": "What is paid order revenue for customer 1?",
+      "tenant_id": "tenant_a", "as_of_date": "2026-11-10",
+      "sources": ["sql"], "scenario": "normal"
+    },
+    {
+      "id": "finance_unavailable",
+      "question": "Compare FPT international software revenue in Q1 and Q2 2025, calculate growth and explain the main reasons for the change.",
+      "tenant_id": "tenant_a", "as_of_date": "2026-11-10",
+      "sources": ["docs"], "scenario": "no-drivers"
+    },
+    {
+      "id": "unanswerable",
+      "question": "What is the unlisted confidential CFO salary amount?",
+      "tenant_id": "tenant_a", "as_of_date": "2026-11-10",
+      "sources": ["docs"], "scenario": "normal"
+    }
+  ]
+}

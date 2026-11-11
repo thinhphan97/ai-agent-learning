@@ -1,0 +1,46 @@
+# Local credentials and secrets (never publish)
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.secrets/
+**/.secrets/
+
+# Python and local tooling
+**/__pycache__/
+**/.pytest_cache/
+**/.venv/
+*.pyc
+.DS_Store
+*.log
+
+# Checkpoints and generated lab artifacts
+**/checkpoints/
+5-agent-memory/data/
+6-agent-evaluation/reports/
+7-agent-safety/reports/
+10-hybrid-retrieval/data/*.sqlite3*
+10-hybrid-retrieval/data/*.db*
+10-hybrid-retrieval/check.tmp
+11-vector-search/data/*.sqlite3*
+11-vector-search/data/*.db*
+11-vector-search/data/qdrant-local/
+11-vector-search/check.tmp
+12-reranking-context/*.tmp
+12-reranking-context/data/*.sqlite3*
+12-reranking-context/data/*.db*
+13-rag-evaluation/reports/
+13-rag-evaluation/*.tmp
+14-advanced-rag/reports/
+14-advanced-rag/*.tmp
+
+# Generated databases anywhere in the workspace
+*.sqlite
+*.sqlite3
+*.db
